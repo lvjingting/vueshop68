@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-box">
       <div class="avatar-box">
-        <img src="../assets/img/logo.png" alt>
+        <img src="../assets/logo.png" alt>
       </div>
 
       <el-form ref="loginFormRef" :model="loginForm">
@@ -12,12 +12,12 @@
         <el-form-item>
           <el-input v-model="loginForm.userpass"></el-input>
         </el-form-item>
-          <el-row>
-            <el-col push="15">
-              <el-button type="primary">登录</el-button>
-              <el-button type="info">重置</el-button>
-            </el-col>
-          </el-row>
+        <el-row>
+          <el-col push="15">
+            <el-button type="primary">登录</el-button>
+            <el-button type="info">重置</el-button>
+          </el-col>
+        </el-row>
       </el-form>
     </div>
   </div>
@@ -38,11 +38,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
- #login-container {
+#login-container {
   background-color: #2b4b6b;
   height: 100%;
   overflow: hidden;
-  #login-box{
+  #login-box {
     width: 450px;
     height: 304px;
     background-color: #fff;
@@ -58,8 +58,8 @@ export default {
       padding: 20px;
       box-sizing: border-box;
     }
-    #logo-box{
-       width: 130px;
+    #logo-box {
+      width: 130px;
       height: 130px;
       border: 1px solid #eee;
       border-radius: 50%;
@@ -70,12 +70,12 @@ export default {
       transform: translate(-50%, -50%);
       background-color: #fff;
       img {
-         width: 100%;
+        width: 100%;
         height: 100%;
         border-radius: 50%;
         background-color: #eee;
       }
     }
   }
- }
+}
 </style>
