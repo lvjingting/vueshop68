@@ -5,14 +5,22 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import './assets/css/global.css'
+import './assets/fonts/iconfont.css'
+import axios from 'axios'
 
 Vue.use(ElementUI)
 // Vue.config.productionTip = false
+
+// 给axios做配置
+axios.defaults.baseURL = 'http://127.0.0.1:11333/api/private/v1/'
+Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
