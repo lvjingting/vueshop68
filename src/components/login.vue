@@ -5,25 +5,12 @@
         <img src="../assets/logo.png" alt>
       </div>
 
-<<<<<<< HEAD
+
+
       <el-form ref="loginFormRef" :model="loginForm">
-        <el-form-item>
-          <el-input v-model="loginForm.username"></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-input v-model="loginForm.userpass"></el-input>
-        </el-form-item>
-          <el-row>
-            <el-col push="15">
-              <el-button type="primary">登录</el-button>
-              <el-button type="info">重置</el-button>
-            </el-col>
-          </el-row>
-=======
-      <el-form :rules="loginFormRules" ref="loginFormRef" :model="loginForm">
-        <el-form-item prop="username">
+        <el-form-item >
           <el-input v-model="loginForm.username">
-            <i slot="prefix" class="iconfont icon-user"></i>
+            
           </el-input>
         </el-form-item>
         <el-form-item prop="password">
@@ -37,7 +24,7 @@
             <el-button type="info" @click="resetForm">重置</el-button>
           </el-col>
         </el-row>
->>>>>>> login
+
       </el-form>
     </div>
   </div>
@@ -45,14 +32,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-    data() {
-    return {
-      // 用户登录表单数据对象(用户名、密码)
-      loginForm: {
-        username: '',
-        password: ''
-=======
   methods: {
     //表单域重置
     resetForm() {
@@ -89,7 +68,7 @@ export default {
       loginForm: {
         username: 'admin',
         password: '123456'
->>>>>>> login
+
       }
     }
   }
@@ -97,19 +76,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
-<<<<<<< HEAD
-#login-container {
-  background-color: #2b4b6b;
-  height: 100%;
-  overflow: hidden;
-  #login-box{
-=======
+
 .login-container {
   background-color: #2b4b6b;
   height: 100%;
   overflow: hidden;
   .login-box {
->>>>>>> login
+
     width: 450px;
     height: 304px;
     background-color: #fff;
@@ -125,13 +98,8 @@ export default {
       padding: 20px;
       box-sizing: border-box;
     }
-<<<<<<< HEAD
-    #logo-box{
+    .avatar-box{
        width: 130px;
-=======
-    .avatar-box {
-      width: 130px;
->>>>>>> login
       height: 130px;
       border: 1px solid #eee;
       border-radius: 50%;
@@ -142,21 +110,14 @@ export default {
       transform: translate(-50%, -50%);
       background-color: #fff;
       img {
-<<<<<<< HEAD
+
          width: 100%;
-=======
-        width: 100%;
->>>>>>> login
+
+
         height: 100%;
         border-radius: 50%;
         background-color: #eee;
       }
-    }
-  }
-<<<<<<< HEAD
- }
+    }}}
 
-=======
-}
->>>>>>> login
 </style>
