@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-box">
       <div class="avatar-box">
-        <img src="../assets/logo.png" alt>
+        <img src="@/assets/logo.png" alt>
       </div>
 
       <el-form :rules="loginFormRules" ref="loginFormRef" :model="loginForm">
